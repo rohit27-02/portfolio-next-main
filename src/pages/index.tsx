@@ -9,9 +9,12 @@ import MainProjects from "../components/MainProjects";
 import Skills from "../components/Skills";
 import SmallProjects from "../components/SmallProjects";
 import Who from "../components/Who";
+
 import { allDataType } from "../shared/types";
 import { client } from "../graphql/client";
 import { useRef } from "react";
+import Services from "../components/Services";
+
 
 interface HomeProps {
   data: allDataType;
@@ -37,6 +40,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
       <div data-scroll-container ref={containerRef}>
         <Intro />
         <Who />
+        <Services/>
         <Skills skills={data.skills} />
         <MainProjects projects={data.projects} />
         <SmallProjects projects={data.smallProjects} />

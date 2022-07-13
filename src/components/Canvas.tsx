@@ -57,7 +57,7 @@ const Canvas: FC = () => {
         this.dx = dx;
         this.dy = dy;
         this.angle = angle;
-        this.size = size;
+        this.size = size *1.5;
         this.image = image;
       }
 

@@ -12,7 +12,7 @@ const Intro: FC = () => {
 
       <svg
         className="h-[10vw] max-h-[100px] min-h-[60px] max-w-[100vw] z-[1]"
-        viewBox="0 -10 320.101 90"
+        viewBox="0 -10 262.7 90"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -25,7 +25,7 @@ const Intro: FC = () => {
               d={character}
               fill="none"
               stroke="#FFF"
-              strokeWidth="3"
+              strokeWidth="2"
             ></m.path>
             <m.path
               initial={{ fill: "#ffffff00" }}
@@ -45,7 +45,7 @@ const Intro: FC = () => {
         transition={{ duration: 0.4, delay: 1.4 }}
         className="text-3xl text-center z-[1] overflow-hidden"
       >
-        {`we are developer's`}
+        {`Start your journey with us`}
       </m.p>
 
       <m.a

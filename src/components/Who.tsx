@@ -9,8 +9,8 @@ const Who: FC = () => {
       <img
         data-scroll
         data-scroll-speed="2"
-        className="w-[225px] h-[225px] rounded-full"
-        src="/avatar.jpg"
+        className="w-[20vw]"
+        src="/680-it-developer-outline (1).webp"
         alt=""
       />
       <div>
@@ -20,22 +20,9 @@ const Who: FC = () => {
 
         {/* Hide my age :v */}
         <p data-scroll className="text-lg text-gray-200" id="story">
-          My name is Nguyen Anh Phong. I&apos;m a
-          {false ? ` ${new Date().getFullYear() - 2007} years old` : ""}{" "}
-          frontend developer living in Hanoi, Vietnam. I started learning web
-          development when I was 13. Since then, I have made a lot of projects,
-          from basic HTML pages to complex projects like a React library. I hope
-          to be a great developer and get my dream job in the future. Besides
-          coding, I also like{" "}
-          <a
-            className="underline underline-offset-2"
-            href="https://blog.napthedev.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            writing blog posts
-          </a>
-          , listening to music and playing video games
+        We are team of creative developers . We, like to develop our projects according to clients perception to provide them what they are imagining in their mind.
+        Our main goal is the disrupt the market with our quality service which make our brand irreversible.
+          
         </p>
       </div>
     </div>

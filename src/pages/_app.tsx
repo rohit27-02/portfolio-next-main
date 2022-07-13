@@ -13,30 +13,30 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <link
           rel="shortcut icon"
-          href="/rounded-avatar.png"
+          href="/android-chrome-512x512.png"
           type="image/x-icon"
         />
 
-        <title>{`10 Bits`}</title>
+        <title>{`10 Bit`}</title>
 
-        <meta name="title" content="10 Bits" />
-        <meta name="description" content="10 Bits" />
+        <meta name="title" content="10 Bit" />
+        <meta name="description" content="10 Bit" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="10 Bits" />
+        <meta property="og:title" content="10 Bit" />
         <meta
           property="og:description"
-          content="10 Bits"
+          content="10 Bit"
         />
-        <meta property="og:image" content="/avatar.jpg" />
+        <meta property="og:image" content="/logo.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content="10 Bits" />
+        <meta property="twitter:title" content="10 Bit" />
         <meta
           property="twitter:description"
-          content="10 Bits"
+          content="10 Bit"
         />
-        <meta property="twitter:image" content="/avatar.jpg" />
+        <meta property="twitter:image" content="/logo.png" />
       </Head>
       <LazyMotion features={domAnimation}>
         <Component {...pageProps} />
