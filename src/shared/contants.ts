@@ -24,6 +24,7 @@ export const canvasImages = [
   "firebase",
   "vscode",
   "git",
+  
  
 ].map(
   (icon) =>

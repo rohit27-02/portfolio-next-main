@@ -11,7 +11,7 @@ const Intro: FC = () => {
       <Canvas />
 
       <svg
-        className="h-[10vw] max-h-[100px] min-h-[60px] max-w-[100vw] z-[1]"
+        className="h-[10vw] max-h-[100px] min-h-[60px]  max-w-[100vw] z-[1]"
         viewBox="0 -10 262.7 90"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +26,7 @@ const Intro: FC = () => {
               fill="none"
               stroke="#FFF"
               strokeWidth="2"
+            
             ></m.path>
             <m.path
               initial={{ fill: "#ffffff00" }}

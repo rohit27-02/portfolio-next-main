@@ -10,7 +10,7 @@ const Who: FC = () => {
         data-scroll
         data-scroll-speed="2"
         className="w-[20vw]"
-        src="/680-it-developer-outline (1).webp"
+        src="/680-it-developer-outline (2).webp"
         alt=""
       />
       <div>

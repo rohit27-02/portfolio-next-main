@@ -1,6 +1,8 @@
 export interface allDataType {
   skills: {
-    image: string;
+    image:{
+url:string
+    };
     title: string;
     link: string;
   }[];

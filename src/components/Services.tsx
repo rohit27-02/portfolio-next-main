@@ -73,6 +73,39 @@ const Services: FC = () => {
 
         </div>
       </div>
+
+      <div
+        id="data"
+        className="flex gap-[5vw] px-[5vw] lg:px-[15vw] z-[2] lg:min-h-[70vh] items-center justify-center flex-col md:flex-row"
+      >
+
+        <div>
+          <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
+            Big data & analytics
+          </h1>
+          <p data-scroll className="text-lg text-gray-200" id="story">
+          10 Bit provides experienced, professional statistical advice, technological solutions, consulting, information management, and analysis for the enterprise across the globe. The goal of the practice is to assist people to better understand and visualize the world around them, based on objective empirical analysis.
+          </p>
+          <a  data-scroll
+          data-scroll-speed="1" className='flex cursor-pointer items-center'>
+            <img
+            className=' w-[8vw]'
+         onMouseEnter={()=>setc(true)}
+         onMouseLeave={()=>setc(false)}
+          src="/981-consultation-outline (1).webp"
+          alt=""
+        />{c && <span className='bg-[#08a88a] py-2 px-4 text-gray-100  rounded-3xl'>Free consultation </span>}</a>
+
+        </div>
+        <img
+          data-scroll
+          data-scroll-speed="2"
+          className="w-[20vw]"
+          src="/153-bar-chart-growth-outline.webp"
+          alt=""
+        />
+      </div>
+
     </section>
   )
 }

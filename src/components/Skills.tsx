@@ -22,7 +22,7 @@ const Skills: FC<SkillsProps> = ({ skills }) => {
         data-scroll-speed="1"
         className="description text-lg text-center my-[30px]"
       >
-        Technologies and languages that We use to make my product everyday
+        Technologies and languages that We use to make our product everyday
       </p>
       <div className="grid justify-center grid-cols-4 md:grid-cols-6 gap-y-[10px] md:gap-y-[20px]">
         {skills.map((skill) => (
@@ -35,7 +35,8 @@ const Skills: FC<SkillsProps> = ({ skills }) => {
           >
             <img
               className="w-[60px] h-[60px] transition duration-300 group-hover:scale-110"
-              src={skill.image}
+              
+              src={skill.image.url}
               alt=""
             />
             <p className="text-center">{skill.title}</p>
