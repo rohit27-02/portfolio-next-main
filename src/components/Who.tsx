@@ -9,11 +9,11 @@ const Who: FC = () => {
       <img
         data-scroll
         data-scroll-speed="2"
-        className="w-[20vw]"
+        className="w-[20vh] md:w-[20vw]"
         src="/680-it-developer-outline (2).webp"
         alt=""
       />
-      <div>
+      <div className="text-center md:text-left space-y-[3vh]">
         <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
           Who are we?
         </h1>

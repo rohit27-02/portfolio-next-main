@@ -40,7 +40,7 @@ export const socialLinks = [
   {
     title: "Facebook",
     icon: "/facebook.png",
-    link: "https://www.facebook.com/napthedev",
+    link: "https://www.facebook.com/10-bits-106437428807899/",
   },
   
   {

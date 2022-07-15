@@ -15,15 +15,10 @@ query {
     description
     demo
     technologies{
-      raw
+     url
     }
     image {
-      url(
-        transformation: {
-          image: { resize: { width: 700 } }
-          validateOptions: true
-        }
-      )
+      url
     }
   }
   smallProjects(stage: PUBLISHED) {
@@ -32,12 +27,7 @@ query {
     description
     link
     icon {
-      url(
-        transformation: {
-          image: { resize: { height: 40 } }
-          validateOptions: true
-        }
-      )
+      url
     }
   }
 }

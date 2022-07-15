@@ -1,6 +1,5 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { FC } from "react";
-import { FaGithub } from "react-icons/fa";
 import { allDataType } from "../shared/types";
 
 interface MainProjectsProps {
@@ -40,9 +39,9 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
             <div className="flex gap-[5px]">
               {project.technologies.map((tech) => (
                 <img
-                  key={tech}
+                  key={tech.url}
                   className="w-[30px] h-[30px]"
-                  src={tech}
+                  src={tech.url}
                   alt=""
                 />
               ))}
@@ -53,20 +52,12 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1876d2] hover:bg-[#2884e0]"
+                className="h-[45px] px-[15px] text-white  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
               >
                 <BiLinkExternal size={25} />
                 <span> Live Demo</span>
               </a>
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-[45px] px-[15px] text-white rounded transition duration-300 flex items-center gap-[10px] bg-[#1b222b] hover:bg-[#191e25]"
-              >
-                <FaGithub size={25} />
-                <span> View Github</span>
-              </a>
+            
             </div>
           </div>
         </div>

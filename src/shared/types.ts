@@ -12,7 +12,9 @@ url:string
     description: string;
     demo: string;
     github: string;
-    technologies: string[];
+    technologies:{
+    url:string;
+    } [];
     image: {
       url: string;
     };
