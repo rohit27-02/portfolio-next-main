@@ -1,12 +1,13 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { FC } from "react";
 import { allDataType } from "../shared/types";
-
+import {useState} from "react"
 interface MainProjectsProps {
   projects: allDataType["projects"];
 }
 
 const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
+  const [loading, setloading] = useState(true)
   return (
     <>
       <h1 className="text-center text-4xl mb-10 md:mb-20">Selected projects</h1>
@@ -19,14 +20,16 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
               : "flex-col lg:flex-row-reverse"
           }`}
         >
-          <div data-scroll data-scroll-speed="3" className="lg:flex-1">
+          <div data-scroll data-scroll-speed="2" className="lg:flex-1">
             <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
-              <div className="border-black border-[8px]">
-                <img
-                  className="w-full rounded-[12px]"
+              <div className="border-black max-h-[84vh] overflow-hidden rounded-[20px] border-[8px]">
+               {loading && <img
+                 onLoad={()=>setloading(true)}
+                  className="w-full  rounded-[12px]"
                   src={project.image.url}
                   alt=""
-                />
+                  loading="lazy"
+                />}
               </div>
             </div>
           </div>
