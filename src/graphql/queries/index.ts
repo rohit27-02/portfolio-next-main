@@ -2,7 +2,7 @@ import { gql } from "graphql-request";
 
 export const GET_ALL_DATA = gql`
 query {
-  skills(stage: PUBLISHED) {
+  skills(stage: PUBLISHED,first: 1000 ) {
     image{
       url
     }
