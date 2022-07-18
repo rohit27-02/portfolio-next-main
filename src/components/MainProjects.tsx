@@ -1,5 +1,5 @@
 import { BiLinkExternal } from "react-icons/bi";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { allDataType } from "../shared/types";
 
 interface MainProjectsProps {
@@ -7,7 +7,7 @@ interface MainProjectsProps {
 }
 
 const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
-  
+  const [loaded, setloaded] = useState(false)
   return (
     <>
       <h1 className="text-center text-4xl mb-10 md:mb-20">Selected projects</h1>
@@ -24,9 +24,9 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
             <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
               <div className="border-black max-h-[84vh] overflow-hidden rounded-[20px] border-[8px]">
                <img
-                 
+                 onLoad={()=>setloaded(true)}
                   className="w-full  rounded-[12px]"
-                  src={project.image.url}
+                  src={loaded?project.image.url:"/334-loader-5 (2).webp"}
                   alt=""
                  loading="lazy"
                 />
