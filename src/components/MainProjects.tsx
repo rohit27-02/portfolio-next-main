@@ -1,7 +1,7 @@
 import { BiLinkExternal } from "react-icons/bi";
 import { FC } from "react";
 import { allDataType } from "../shared/types";
-import {useState} from "react"
+
 interface MainProjectsProps {
   projects: allDataType["projects"];
 }
