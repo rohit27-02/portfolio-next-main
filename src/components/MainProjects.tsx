@@ -1,5 +1,5 @@
 import { BiLinkExternal } from "react-icons/bi";
-import { FC, useState } from "react";
+import { FC } from "react";
 import { allDataType } from "../shared/types";
 
 interface MainProjectsProps {
@@ -7,7 +7,7 @@ interface MainProjectsProps {
 }
 
 const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
-  const [loaded, setloaded] = useState(false)
+
   return (
     <>
       <h1 className="text-center text-4xl mb-10 md:mb-20">Selected projects</h1>
@@ -21,14 +21,16 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
           }`}
         >
           <div data-scroll data-scroll-speed="2" className="lg:flex-1">
-            <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
-              <div className="border-black max-h-[84vh] overflow-hidden rounded-[20px] border-[8px]">
-               <img
-                 onLoad={()=>setloaded(true)}
+          <div className={`border-[#888] border-2 rounded-[20px] overflow-hidden ${index % 2 ==1?"md:max-w-[20vw]":""}`}>
+              <div className="border-black object-contain  overflow-hidden rounded-[20px] border-[8px]">
+             <video
+                 
                   className="w-full  rounded-[12px]"
-                  src={loaded?project.image.url:"/334-loader-5 (2).webp"}
-                  alt=""
-                 loading="lazy"
+                  src={project.image.url}
+                  autoPlay
+                  loop
+                  muted
+                
                 />
               </div>
             </div>
