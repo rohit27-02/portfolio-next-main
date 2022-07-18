@@ -28,7 +28,7 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
                   className="w-full  rounded-[12px]"
                   src={project.image.url}
                   alt=""
-                 
+                 loading="lazy"
                 />
               </div>
             </div>
