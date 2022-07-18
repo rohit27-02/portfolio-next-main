@@ -7,7 +7,7 @@ interface MainProjectsProps {
 }
 
 const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
-  const [loading, setloading] = useState(true)
+  
   return (
     <>
       <h1 className="text-center text-4xl mb-10 md:mb-20">Selected projects</h1>
@@ -23,13 +23,13 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
           <div data-scroll data-scroll-speed="2" className="lg:flex-1">
             <div className="border-[#888] border-2 rounded-[20px] overflow-hidden">
               <div className="border-black max-h-[84vh] overflow-hidden rounded-[20px] border-[8px]">
-               {loading && <img
-                 onLoad={()=>setloading(true)}
+               <img
+                 
                   className="w-full  rounded-[12px]"
                   src={project.image.url}
                   alt=""
-                  loading="lazy"
-                />}
+                 
+                />
               </div>
             </div>
           </div>
