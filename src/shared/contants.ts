@@ -33,9 +33,9 @@ export const canvasImages = [
 
 export const socialLinks = [
   {
-    title: "Github",
-    icon: "/github.png",
-    link: "https://github.com/napthedev",
+    title: "Instagram",
+    icon: "https://img.icons8.com/fluency/48/000000/instagram-new.png",
+    link: "/",
   },
   {
     title: "Facebook",
@@ -46,11 +46,11 @@ export const socialLinks = [
   {
     title: "Linkedin",
     icon: "/58e91afdeb97430e81906504.png",
-    link: "https://codepen.io/enaypi",
+    link: "/",
   },
   {
     title: "Whatsapp",
     icon: "/icons8-whatsapp.svg",
-    link: "https://blog.napthedev.com",
+    link: "/",
   },
 ];
