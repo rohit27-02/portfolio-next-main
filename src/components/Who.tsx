@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FC } from "react";
 import { BiLinkExternal } from "react-icons/bi";
 
@@ -26,13 +27,14 @@ const Who: FC = () => {
           web applications and solutions to advance technological progress.
         </p>
         <div className="flex mt-[25px] gap-[20px]">
-              <a
-                href="/about"
-                className="h-[45px] px-[15px] text-white  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
+              <Link
+                href="/about" passHref
               >
                 <BiLinkExternal size={25} />
-                <span> Know More</span>
-              </a>
+                <span 
+                className="h-[45px] px-[15px] text-white  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
+                > Know More</span>
+              </Link>
             
             </div>
       </div>
