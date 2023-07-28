@@ -36,8 +36,8 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
             </div>
           </div>
           <div className="item-info lg:flex-1">
-            <h1 className="text-3xl">{project.title}</h1>
-            <p className="text-[20px] text-justify my-3">
+            <h1 className="text-4xl font-semibold">{project.title}</h1>
+            <p className="text-lg text-justify my-3">
               {project.description}
             </p>
 

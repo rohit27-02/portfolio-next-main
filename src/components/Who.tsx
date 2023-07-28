@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { BiLinkExternal } from "react-icons/bi";
 
 const Who: FC = () => {
   return (
@@ -15,15 +16,25 @@ const Who: FC = () => {
       />
       <div className="text-center md:text-left space-y-[3vh]">
         <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
-          Who are we?
+          Who am I ?
         </h1>
 
         {/* Hide my age :v */}
         <p data-scroll className="text-lg text-gray-200" id="story">
-        We are team of creative developers . We, like to develop our projects according to clients perception to provide them what they are imagining in their mind.
-        Our main goal is the disrupt the market with our quality service which make our brand irreversible.
-          
+          Highly motivated and skilled Full Stack Developer with a B.Tech degree in Computer Science and Engineering (CSE).
+          Proficient in MERN stack and experienced in various technologies, seeking to contribute expertise in developing innovative
+          web applications and solutions to advance technological progress.
         </p>
+        <div className="flex mt-[25px] gap-[20px]">
+              <a
+                href="/about"
+                className="h-[45px] px-[15px] text-white  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
+              >
+                <BiLinkExternal size={25} />
+                <span> Know More</span>
+              </a>
+            
+            </div>
       </div>
     </div>
   );

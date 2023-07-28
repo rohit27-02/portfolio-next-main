@@ -40,7 +40,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
       <div data-scroll-container ref={containerRef}>
         <Intro />
         <Who />
-        <Services/>
+        {/* <Services/> */}
         <Skills skills={data.skills} />
         <MainProjects projects={data.projects} />
         <SmallProjects projects={data.smallProjects} />

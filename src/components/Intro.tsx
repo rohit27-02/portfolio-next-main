@@ -6,47 +6,56 @@ import { characters } from "../shared/contants";
 import { m } from "framer-motion";
 
 const Intro: FC = () => {
+
   return (
     <div className="relative h-screen flex justify-center items-center flex-col gap-5">
       <Canvas />
 
-      <svg
-        className="h-[10vw] max-h-[100px] min-h-[60px]  max-w-[100vw] z-[1]"
-        viewBox="0 -10 262.7 90"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <div className="flex w-full justify-center items-center align-baseline z-[1] max-w-[100vw]">
         {characters.map((character, index) => (
-          <Fragment key={character}>
-            <m.path
-              initial={{ pathLength: 0 }}
-              animate={{ pathLength: 1 }}
-              transition={{ delay: index / 10, duration: 1 }}
-              d={character}
-              fill="none"
-              stroke="#FFF"
-              strokeWidth="2"
+
+          <svg
+           
+           className="w-[200px] md:w-[250px] h-[60px] md:h-[80px] "
+            key={character}
+            viewBox="70 -20 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             
-            ></m.path>
-            <m.path
-              initial={{ fill: "#ffffff00" }}
-              animate={{ fill: "#ffffff" }}
-              transition={{ delay: 0.7 + index / 10, duration: 0.6 }}
-              fill="none"
-              d={character}
-            ></m.path>
-          </Fragment>
+          >
+            <Fragment >
+              <m.path
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ delay: 1 + index / 10, duration: 2 }}
+                d={character}
+                fill="none"
+                stroke="#FFF"
+                strokeWidth="2"
+                vectorEffect="non-scaling-stroke"
+
+              ></m.path>
+              <m.path
+                initial={{ fill: "#ffffff00" }}
+                animate={{ fill: "#ffffff" }}
+                transition={{ delay: 1.5 + index / 10, duration: 2 }}
+                fill="none"
+                d={character}
+                vectorEffect="non-scaling-stroke"
+              ></m.path>
+            </Fragment>
+          </svg>
         ))}
-      </svg>
+      </div>
       <m.p
         data-scroll
         data-scroll-speed="1"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4, delay: 1.4 }}
-        className="text-3xl text-center z-[1] overflow-hidden"
+        className="text-3xl font-semibold text-center z-[1] overflow-hidden"
       >
-        {`Start your journey with us`}
+        {`Full Stack Developer`}
       </m.p>
 
       <m.a

@@ -1,7 +1,7 @@
 export interface allDataType {
   skills: {
-    image:{
-url:string
+    image: {
+      url: string;
     };
     title: string;
     link: string;
@@ -12,9 +12,9 @@ url:string
     description: string;
     demo: string;
     github: string;
-    technologies:{
-    url:string;
-    } [];
+    technologies: {
+      url: string;
+    }[];
     image: {
       url: string;
     };
