@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import Link from "next/link";
 import { FC } from "react";
 import { BiLinkExternal } from "react-icons/bi";
@@ -28,7 +29,7 @@ const Who: FC = () => {
         </p>
         <div className="flex mt-[25px] gap-[20px]">
               <Link
-                href="/about" passHref
+                href="/about" 
               >
                 <BiLinkExternal size={25} />
                 <span 
