@@ -15,7 +15,7 @@ const Who: FC = () => {
         src="/680-it-developer-outline (2).webp"
         alt=""
       />
-      <div className="text-center md:text-left space-y-[3vh]">
+      <div className=" space-y-[3vh]">
         <h1 data-scroll data-scroll-speed="0.5" className="title text-[40px]">
           Who am I ?
         </h1>
@@ -31,7 +31,7 @@ const Who: FC = () => {
                 href="/about" 
               >
                 <span 
-                className="h-[45px] px-[15px] text-white  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
+                className="h-[45px] px-[15px] text-white cursor-pointer  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white]"
                 > Know More</span>
               </Link>
             
