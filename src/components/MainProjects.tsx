@@ -21,7 +21,7 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
           }`}
         >
           <div data-scroll data-scroll-speed="2" className="lg:flex-1">
-          <div className={`border-[#888] border-2 rounded-[20px] overflow-hidden ${index % 2 ==1?"md:max-w-[20vw]":""}`}>
+          <div className={`border-[#888] border-2 rounded-[20px] overflow-hidden`}>
               <div className="border-black object-contain  overflow-hidden rounded-[20px] border-[8px]">
              <video
                  
