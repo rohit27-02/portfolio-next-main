@@ -77,7 +77,7 @@ const Contact: FC = () => {
               aria-label="Loading Spinner"
               data-testid="loader"
             /></div>
-            : <form onSubmit={(e) => handleSubmit(e)} className="  rounded-lg md:items-center flex flex-col justify-evenly md:flex-row  w-full ">
+            : <form onSubmit={(e) => handleSubmit(e)} className="md:space-x-10  rounded-lg md:items-center flex flex-col justify-evenly md:flex-row  w-full ">
 
               <div className="relative md:w-1/3 md:mb-0 mb-4">
                 <input value={name} onChange={(e) => setname(e.currentTarget.value)} placeholder="Full name" type="text" id="full-name" name="full-name" className="w-full bg-white rounded border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
