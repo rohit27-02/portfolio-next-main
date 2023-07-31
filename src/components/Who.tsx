@@ -12,7 +12,7 @@ const Who: FC = () => {
         data-scroll
         data-scroll-speed="2"
         className="w-[20vh] md:w-[20vw]"
-        src="/680-it-developer-outline (2).webp"
+        src="/web-development_1688451.png"
         alt=""
       />
       <div className=" space-y-[3vh]">
