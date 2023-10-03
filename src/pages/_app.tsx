@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import "../styles/globals.css";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
@@ -37,6 +38,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="10 Bit"
         />
         <meta property="twitter:image" content="/logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
       <LazyMotion features={domAnimation}>
         <Component {...pageProps} />

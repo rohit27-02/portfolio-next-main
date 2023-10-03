@@ -38,7 +38,7 @@ const Contact: FC = () => {
 
   return (
     <div className="pb-20 relative">
-      {toast && <div className='absolute animate__animated animate__zoomIn text-emerald-800 md:-top-52 -top-96 font-medium z-50 bg-white md:text-2xl p-6 rounded-xl right-[17%] md:right-12 drop-shadow-sm '>Notification sent successfully ! 😀</div>}
+      {toast && <div className='absolute animate__animated animate__zoomIn text-emerald-800 md:-top-52 -top-96 font-medium z-50 bg-white p-6 rounded-xl right-[17%] md:right-12 drop-shadow-sm '>Notification sent successfully ! 😀</div>}
       <h1 className="text-center text-4xl mt-14 md:mt-28 mb-10">
         Get in touch
       </h1>
@@ -86,7 +86,7 @@ const Contact: FC = () => {
               <div className="relative md:w-1/3 md:mb-0 mb-4">
                 <input value={email} onChange={(e) => setemail(e.currentTarget.value)} placeholder="Email" type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-green-600 focus:ring-2 focus:ring-green-600 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
               </div>
-              <input type="submit" className="h-[45px] px-[15px] text-white cursor-pointer  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white] mr-auto" value="Send"/>
+              <input type="submit" className="py-[10px] px-[30px] text-white cursor-pointer  rounded transition duration-300 flex items-center gap-[10px] bg-[#06a987] hover:text-dark hover:bg-[white] mr-auto" value="Send"/>
             </form>}
         </div>
       </div>

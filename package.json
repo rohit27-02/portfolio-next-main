@@ -23,12 +23,14 @@
     "react-dom": "18.0.0",
     "react-icons": "^4.4.0",
     "react-locomotive-scroll": "^0.2.2",
-    "react-spinners": "^0.13.8"
+    "react-spinners": "^0.13.8",
+    "three": "^0.157.0"
   },
   "devDependencies": {
     "@types/node": "17.0.24",
     "@types/react": "18.0.4",
     "@types/react-dom": "18.0.0",
+    "@types/three": "^0.156.0",
     "autoprefixer": "^10.4.7",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.5",
