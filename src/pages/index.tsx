@@ -12,8 +12,9 @@ import Who from "../components/Who";
 
 import { allDataType } from "../shared/types";
 import { client } from "../graphql/client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Services from "../components/Services";
+import CUstomLoader from '../components/CustomLoader';
 
 
 interface HomeProps {
@@ -22,6 +23,7 @@ interface HomeProps {
 
 const Home: NextPage<HomeProps> = ({ data }) => {
   const containerRef = useRef(null);
+  const [loading, setloading] = useState(true)
 
   return (
     <LocomotiveScrollProvider
@@ -38,11 +40,12 @@ const Home: NextPage<HomeProps> = ({ data }) => {
       <Cursor />
 
       <div data-scroll-container ref={containerRef}>
+       <CUstomLoader loading={loading}/>
         <Intro />
         <Who />
         {/* <Services/> */}
         <Skills skills={data.skills} />
-        <MainProjects projects={data.projects} />
+        <MainProjects projects={data.projects} setloading={setloading}/>
         <SmallProjects projects={data.smallProjects} />
         <Contact />
       </div>

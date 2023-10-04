@@ -69,7 +69,7 @@ const Intro: FC = () => {
         href="#who"
         data-scroll-to
       >
-        <BiChevronsDown className="animate-bounce" size={56} />
+        <BiChevronsDown className="animate-pulse transition-all duration-300" size={56} />
       </m.a>
     </div>
   );

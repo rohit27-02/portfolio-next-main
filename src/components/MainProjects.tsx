@@ -2,11 +2,13 @@ import { BiLinkExternal } from "react-icons/bi";
 import { FC } from "react";
 import { allDataType } from "../shared/types";
 
+type SetLoadingFunction = (loading: boolean) => void;
 interface MainProjectsProps {
   projects: allDataType["projects"];
+  setloading:SetLoadingFunction;
 }
 
-const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
+const MainProjects: FC<MainProjectsProps> = ({ projects ,setloading}) => {
 
   return (
     <>
@@ -30,6 +32,7 @@ const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
                   autoPlay
                   loop
                   muted
+                  onLoadedData={()=>setloading(false)}
                 
                 />
               </div>
